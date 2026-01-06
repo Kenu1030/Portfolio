@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Your Name</title>
+  <meta name="description" content="Personal portfolio of Your Name: Frontend Developer, UI/UX, and JavaScript engineer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">Your<span>Name</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text" data-reveal>
+        <h1>Hi, I'm <span class="accent"> Kenu Christian T. Abadia </span></h1>
+        <p class="subtitle">Frontend Developer specializing in HTML, CSS, and JavaScript.</p>
+        <div class="cta">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:you@example.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+      <div class="hero-media" data-reveal>
+        <div class="avatar">
+          <!-- Replace with your image in assets/images/avatar.jpg -->
+          <img src="assets/images/profile.jpg" alt="Your portrait" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="about" class="section about">
+    <div class="container grid-2">
+      <div>
+        <h2>About Me</h2>
+        <p>
+          I'm a developer with a passion for crafting clean, accessible, and responsive web experiences.
+          I focus on modern JavaScript, performance, and delightful UI.
+        </p>
+        <ul class="skills">
+          <li>HTML5 & Semantic Markup</li>
+          <li>CSS3, Flexbox, Grid</li>
+          <li>JavaScript (ES6+)</li>
+          <li>Responsive & Accessible Design</li>
+        </ul>
+      </div>
+      <div class="about-card" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <article class="project" data-reveal>
+          <div class="thumb"></div>
+          <div class="content">
+            <h3>Project One</h3>
+            <p>Short description of your project — tech stack and key features.</p>
+            <div class="links">
+              <a href="#" class="btn small">Live Demo</a>
+              <a href="#" class="btn small outline">Source</a>
+            </div>
+          </div>
+        </article>
+        <article class="project" data-reveal>
+          <div class="thumb"></div>
+          <div class="content">
+            <h3>Project Two</h3>
+            <p>Short description of your project — tech stack and key features.</p>
+            <div class="links">
+              <a href="#" class="btn small">Live Demo</a>
+              <a href="#" class="btn small outline">Source</a>
+            </div>
+          </div>
+        </article>
+        <article class="project" data-reveal>
+          <div class="thumb"></div>
+          <div class="content">
+            <h3>Project Three</h3>
+            <p>Short description of your project — tech stack and key features.</p>
+            <div class="links">
+              <a href="#" class="btn small">Live Demo</a>
+              <a href="#" class="btn small outline">Source</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form class="contact-form" aria-label="Contact form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+        </div>
+        <button type="submit" class="btn primary">Send</button>
+        <p class="form-hint">This demo uses mailto; replace with Formspree or your backend.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      <a href="#home" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
