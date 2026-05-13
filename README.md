@@ -29,7 +29,19 @@ This portfolio serves as a central hub where visitors can learn about me, explor
 
 ---
 
-## 🚀 Getting Started
+## 🗂️ Project Structure
+
+```
+Portfolio/
+├── index.html   # Main portfolio page
+├── style.css    # Minimalist white theme, CSS variables, animations
+├── script.js    # Scroll-reveal & nav micro-interactions
+└── README.md    # This file
+```
+
+---
+
+
 
 To run this project locally:
 

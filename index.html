@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kenu Christian Abadia – Frontend Developer portfolio showcasing projects, skills, and contact information."
+    />
+    <title>Kenu Abadia — Developer Portfolio</title>
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ─────────────────────────── NAV ─────────────────────────── -->
+    <header class="nav-wrapper">
+      <nav class="nav container">
+        <a href="#hero" class="nav__logo">KA</a>
+        <ul class="nav__links">
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ─────────────────────────── HERO ─────────────────────────── -->
+      <section id="hero" class="hero section">
+        <div class="container hero__inner">
+          <p class="hero__eyebrow fade-up">Hello, I'm</p>
+          <h1 class="hero__title fade-up delay-1">Kenu Abadia</h1>
+          <p class="hero__subtitle fade-up delay-2">
+            Frontend Developer &amp; UI Enthusiast
+          </p>
+          <p class="hero__desc fade-up delay-3">
+            I craft responsive, accessible web experiences that are both
+            functional and beautiful — with a focus on clean code and
+            thoughtful design.
+          </p>
+          <div class="hero__cta fade-up delay-4">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--outline">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────── ABOUT ─────────────────────────── -->
+      <section id="about" class="about section">
+        <div class="container">
+          <span class="section__label reveal">About</span>
+          <h2 class="section__title reveal">Who I am</h2>
+          <div class="about__grid">
+            <div class="about__text reveal">
+              <p>
+                I'm a web developer passionate about building clean,
+                user-focused interfaces. My background spans both the
+                academic and personal project space, where I've developed
+                a strong foundation in HTML, CSS, JavaScript, and modern
+                frontend tooling.
+              </p>
+              <p>
+                When I'm not coding, I enjoy exploring design systems,
+                keeping up with emerging web technologies, and finding
+                ways to improve the developer experience.
+              </p>
+            </div>
+            <ul class="about__highlights reveal">
+              <li class="highlight-card">
+                <span class="highlight-card__icon">🎓</span>
+                <div>
+                  <strong>Education</strong>
+                  <p>Computer Science background with a focus on web technologies</p>
+                </div>
+              </li>
+              <li class="highlight-card">
+                <span class="highlight-card__icon">💡</span>
+                <div>
+                  <strong>Approach</strong>
+                  <p>Minimalist design meets performance-first engineering</p>
+                </div>
+              </li>
+              <li class="highlight-card">
+                <span class="highlight-card__icon">🌐</span>
+                <div>
+                  <strong>Focus</strong>
+                  <p>Responsive layouts, accessible UX, and smooth interactions</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────── SKILLS ─────────────────────────── -->
+      <section id="skills" class="skills section section--gray">
+        <div class="container">
+          <span class="section__label reveal">Skills</span>
+          <h2 class="section__title reveal">What I work with</h2>
+          <div class="skills__grid">
+            <div class="skill-card reveal">
+              <div class="skill-card__icon">⚡</div>
+              <h3>HTML5 &amp; CSS3</h3>
+              <p>Semantic markup, custom properties, Flexbox &amp; Grid, animations</p>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-card__icon">🟨</div>
+              <h3>JavaScript</h3>
+              <p>ES6+, DOM manipulation, async/await, Fetch API, modular code</p>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-card__icon">📐</div>
+              <h3>Responsive Design</h3>
+              <p>Mobile-first layouts, media queries, fluid typography &amp; spacing</p>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-card__icon">🔧</div>
+              <h3>Developer Tools</h3>
+              <p>Git, GitHub, VS Code, Chrome DevTools, Figma</p>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-card__icon">🎨</div>
+              <h3>UI / UX Principles</h3>
+              <p>Visual hierarchy, whitespace, accessibility, design systems</p>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-card__icon">🚀</div>
+              <h3>Performance</h3>
+              <p>Optimized assets, lazy loading, Core Web Vitals awareness</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────── PROJECTS ─────────────────────────── -->
+      <section id="projects" class="projects section">
+        <div class="container">
+          <span class="section__label reveal">Projects</span>
+          <h2 class="section__title reveal">Things I've built</h2>
+          <div class="projects__grid">
+            <!-- Project cards – replace href values with real links when available -->
+            <article class="project-card reveal">
+              <div class="project-card__top">
+                <span class="project-card__tag">HTML · CSS · JS</span>
+                <a
+                  href="https://github.com/Kenu1030"
+                  class="project-card__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View source on GitHub"
+                >↗</a>
+              </div>
+              <h3 class="project-card__title">Portfolio Website</h3>
+              <p class="project-card__desc">
+                This very site — a minimalist personal portfolio built from
+                scratch with semantic HTML, custom CSS, and vanilla JS
+                animations.
+              </p>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__top">
+                <span class="project-card__tag">HTML · CSS · JS</span>
+                <a
+                  href="https://github.com/Kenu1030"
+                  class="project-card__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View source on GitHub"
+                >↗</a>
+              </div>
+              <h3 class="project-card__title">Project Two</h3>
+              <p class="project-card__desc">
+                A responsive web application demonstrating modern layout
+                techniques, interactive components, and clean UI patterns.
+              </p>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__top">
+                <span class="project-card__tag">HTML · CSS · JS</span>
+                <a
+                  href="https://github.com/Kenu1030"
+                  class="project-card__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View source on GitHub"
+                >↗</a>
+              </div>
+              <h3 class="project-card__title">Project Three</h3>
+              <p class="project-card__desc">
+                An academic project focused on usability and accessibility,
+                implementing WCAG guidelines and keyboard-navigable UI.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────── CONTACT ─────────────────────────── -->
+      <section id="contact" class="contact section section--gray">
+        <div class="container contact__inner">
+          <span class="section__label reveal">Contact</span>
+          <h2 class="section__title reveal">Let's connect</h2>
+          <p class="contact__desc reveal">
+            Have a project in mind or just want to say hello? My inbox is
+            always open.
+          </p>
+          <div class="contact__links reveal">
+            <a
+              href="mailto:kenuabadia@gmail.com"
+              class="btn btn--primary"
+            >Send an Email</a>
+            <a
+              href="https://github.com/Kenu1030"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--outline"
+            >GitHub Profile</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ─────────────────────────── FOOTER ─────────────────────────── -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© 2026 Kenu Abadia</span>
+        <span>Built with HTML · CSS · JS</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
