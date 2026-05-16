@@ -8,9 +8,14 @@
       name="description"
       content="One-page IT portfolio featuring projects, skills, experience, and contact details."
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/image-modal.css" />
   </head>
   <body>
+    <div class="scroll-progress"></div>
+    <div class="animated-bg-blob blob-1"></div>
+    <div class="animated-bg-blob blob-2"></div>
+
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="#top" aria-label="Go to top">
@@ -19,16 +24,16 @@
         </a>
 
         <nav class="nav" aria-label="Primary">
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
           <a class="nav-cta" href="#contact">Contact</a>
         </nav>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero" aria-label="Introduction">
+      <section class="hero" aria-label="Introduction" data-scroll>
         <div class="container hero-inner">
           <div class="hero-copy">
             <div class="hero-top">
@@ -49,29 +54,25 @@
               </a>
 
               <div>
-                <h1 class="hero-title">Kenu Christian T. Abadia</h1>
-                <p class="hero-subtitle">
-                  BSIT graduating student with internship experience in
-                  IT support and exposure to web development. Skilled in PHP,
-                  JavaScript, HTML, CSS, Git, and MySQL, with strong interest in
-                  efficient systems, solving technical problems, and contributing
-                  to IT operations and software development teams.
+                <h1 class="hero-title" data-scroll>Kenu Christian T. Abadia</h1>
+                <p class="hero-subtitle" data-scroll-type="typing">
+                  BSIT graduating student with internship experience in IT support and exposure to web development. Skilled in PHP, JavaScript, HTML, CSS, Git, and MySQL.
                 </p>
               </div>
             </div>
-            <div class="hero-actions">
+            <div class="hero-actions" data-scroll>
               <a class="button" href="#projects">View Projects</a>
               <a class="button button-secondary" href="#contact">Contact Me</a>
             </div>
 
-            <ul class="hero-highlights" aria-label="Highlights">
+            <ul class="hero-highlights" aria-label="Highlights" data-scroll>
               <li>IT support & troubleshooting</li>
               <li>Web development fundamentals</li>
               <li>Basic networking & cybersecurity fundamentals</li>
             </ul>
           </div>
 
-          <div class="hero-card" aria-label="Quick info">
+          <div class="hero-card" aria-label="Quick info" data-scroll>
             <div class="quick-row">
               <span class="quick-label">Location</span>
               <span class="quick-value">Countryside Village, Lipata, Minglanilla, Cebu</span>
@@ -88,9 +89,9 @@
         </div>
       </section>
 
-      <section class="section" id="projects" aria-label="Projects">
+      <section class="section" id="projects" aria-label="Projects" data-scroll>
         <div class="container">
-          <header class="section-header">
+          <header class="section-header" data-scroll>
             <h2>Projects</h2>
             <p class="section-lede">
               Selected academic and practical work.
@@ -98,15 +99,13 @@
           </header>
 
           <div class="grid cards">
-            <article class="card">
+            <article class="card" data-scroll>
+              <div class="card-overlay"></div>
               <div class="card-body">
                 <h3>Archiflow</h3>
                 <p>Built using PHP, MySQL, HTML, CSS, and JavaScript.</p>
-                <p class="card-detail">Key feature: <span class="muted">A web-based document management system that allows users to
-                  upload, categorize, search, and retrieve files efficiently, with user authentication and
-                    role-based access control to ensure secure and organized document handling. </span></p>
-                <p class="card-detail">Outcome: <span class="muted">Improved document organization and retrieval efficiency by reducing manual
-                    file handling and enabling faster access to stored files.</span></p>
+                <p class="card-detail">Key feature: <span class="muted">A web-based document management system that allows users to upload, categorize, search, and retrieve files efficiently, with user authentication and role-based access control to ensure secure and organized document handling.</span></p>
+                <p class="card-detail">Outcome: <span class="muted">Improved document organization and retrieval efficiency by reducing manual file handling and enabling faster access to stored files.</span></p>
                 <ul class="tags" aria-label="Tech used">
                   <li>PHP</li>
                   <li>MySQL</li>
@@ -125,7 +124,57 @@
               </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-scroll>
+              <div class="card-overlay"></div>
+              <div class="card-body">
+                <h3>STAS-M Payroll</h3>
+                <p>
+                  Payroll module extension for the STAS-M system that handles salary computation, deductions, and payslip generation with secure record keeping.
+                </p>
+                <ul class="tags" aria-label="Tech used">
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <a
+                  class="link"
+                  href="assets/img/certificate.jpg"
+                  aria-label="View STAS-M Payroll certificate"
+                >
+                  View Certificate
+                </a>
+              </div>
+            </article>
+
+            <article class="card" data-scroll>
+              <div class="card-overlay"></div>
+              <div class="card-body">
+                <h3>Job Tracker — AI Resume Critique</h3>
+                <p>
+                  Applicant tracking and job management tool with an integrated AI assistant that reads resumes and provides automated critique and improvement suggestions.
+                </p>
+                <ul class="tags" aria-label="Tech used">
+                  <li>Node.js</li>
+                  <li>JavaScript</li>
+                  <li>AI</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <a
+                  class="link"
+                  href="https://github.com/Kenu1030/job-tracker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Repo Link
+                </a>
+              </div>
+            </article>
+
+            <article class="card" data-scroll>
+              <div class="card-overlay"></div>
               <div class="card-body">
                 <h3>STAS-M Student System Management</h3>
                 <p>
@@ -140,16 +189,22 @@
                 </ul>
               </div>
               <div class="card-footer">
-                <a class="link" href="#contact">Repo Link</a>
+                <a
+                  class="link"
+                  href="assets/img/certificate.jpg"
+                  aria-label="View STAS-M certificate"
+                >
+                  View Certificate
+                </a>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="about" aria-label="About">
+      <section class="section" id="about" aria-label="About" data-scroll>
         <div class="container">
-          <header class="section-header">
+          <header class="section-header" data-scroll>
             <h2>About</h2>
             <p class="section-lede">
               Professional summary, skills, and strengths.
@@ -157,7 +212,7 @@
           </header>
 
           <div class="split">
-            <div>
+            <div data-scroll>
               <p>
                 I’m a BSIT graduating student with hands-on internship
                 experience supporting users and maintaining IT systems.
@@ -170,7 +225,7 @@
               </p>
             </div>
 
-            <div class="panel">
+            <div class="panel" data-scroll>
               <h3 class="panel-title">Technical Skills</h3>
               <ul class="bullets">
                 <li>Programming Languages: PHP, JavaScript</li>
@@ -182,7 +237,7 @@
           </div>
 
           <div class="grid two-up" aria-label="Additional strengths">
-            <div class="panel">
+            <div class="panel" data-scroll>
               <h3 class="panel-title">Achievements</h3>
               <ul class="bullets">
                 <li>Dean’s Lister (College) — Cebu Technological University (Naga Extension)</li>
@@ -191,7 +246,7 @@
               </ul>
             </div>
 
-            <div class="panel">
+            <div class="panel" data-scroll>
               <h3 class="panel-title">Soft Skills</h3>
               <ul class="bullets">
                 <li>Problem-solving</li>
@@ -204,15 +259,15 @@
         </div>
       </section>
 
-      <section class="section" id="experience" aria-label="Experience">
+      <section class="section" id="experience" aria-label="Experience" data-scroll>
         <div class="container">
-          <header class="section-header">
+          <header class="section-header" data-scroll>
             <h2>Experience</h2>
             <p class="section-lede">Internship experience and education.</p>
           </header>
 
           <div class="stack">
-            <article class="timeline-item">
+            <article class="timeline-item" data-scroll>
               <div class="timeline-top">
                 <h3>IT Intern (On-the-Job Training) — St. Thomas Aquinas School of Lawaan Montessori</h3>
                 <span class="muted">January — May</span>
@@ -225,7 +280,7 @@
               </ul>
             </article>
 
-            <article class="timeline-item">
+            <article class="timeline-item" data-scroll>
               <div class="timeline-top">
                 <h3>Bachelor of Science in Information Technology — Cebu Technological University (Naga Extension)</h3>
                 <span class="muted">Expected Graduation</span>
@@ -236,9 +291,9 @@
         </div>
       </section>
 
-      <section class="section" id="contact" aria-label="Contact">
+      <section class="section" id="contact" aria-label="Contact" data-scroll>
         <div class="container">
-          <header class="section-header">
+          <header class="section-header" data-scroll>
             <h2>Contact</h2>
             <p class="section-lede">
               Best ways to reach me.
@@ -246,7 +301,7 @@
           </header>
 
           <div class="contact">
-            <div class="panel">
+            <div class="panel" data-scroll>
               <h3 class="panel-title">Message</h3>
               <p>
                 Email: <a class="link" href="mailto:kenuabadia@gmail.com">kenuabadia@gmail.com</a>
@@ -257,7 +312,7 @@
               <p class="muted">Location: Countryside Village, Lipata, Minglanilla, Cebu</p>
             </div>
 
-            <div class="panel">
+            <div class="panel" data-scroll>
               <h3 class="panel-title">What I’m looking for</h3>
               <ul class="bullets">
                 <li>IT support / helpdesk / desktop support</li>
@@ -270,11 +325,14 @@
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" data-scroll>
       <div class="container footer-inner">
         <p class="muted">© Kenu Christian T. Abadia</p>
-        <p class="muted">Built with HTML + CSS</p>
+        <p class="muted">Built with HTML + CSS + Modern Interactions</p>
       </div>
     </footer>
+
+    <script src="js/interactions.js"></script>
+    <script src="js/image-modal.js"></script>
   </body>
 </html>
